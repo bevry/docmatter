@@ -1,0 +1,32 @@
+sudo: false
+language: node_js
+node_js:
+- '0.8'
+- '0.10'
+- '0.12'
+- '4'
+- '6'
+- '8'
+- '10'
+matrix:
+  fast_finish: true
+  allow_failures:
+  - node_js: '0.8'
+  - node_js: '0.10'
+  - node_js: '0.12'
+cache:
+  directories:
+  - "$HOME/.npm"
+  - "$HOME/.yarn-cache"
+install:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-install.bash)"
+before_script:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-verify.bash)"
+after_success:
+- eval "$(curl -fsSL https://raw.githubusercontent.com/bevry/awesome-travis/1ec050bc004d0e2161cb5286c247850d24aecc02/scripts/node-publish.bash)"
+notifications:
+  slack:
+    secure: EmOWZ4CmtZUsRqeGxkeJ/WtY0vDm0+qyJUL93SR7XWqCdf/7MZov1At/4KNBVWb03ki4jUOHh+GLuS1hX6doo5vaG+hwRzwX12LrNrJnpIITmoB9KWpSqLL06/F10IDi1k+eKmifszdOj9WN5+3L+8JxWSxOjNGy3zdiKmIujxaS0Mt6ADHCbqN9T1Jbu2DoM9+Wj8VJJVSaan7qh/FydjDWLI4QawZo3x0WhOS4jF9lxaxQWeHM75yDOke3sD4ynlq0gk0LGBEl3oYSVyvrthzSjmQ+dFCPoDRg3UvbyrVOF2qF77kAibDH+BZLP0n8AqfQI4qclxb1/eLeeiFIHWq6WX7dXUYlMcO9BlsXNnt82iWU/8HIQmQeqdXmkp9TDHMQoWGP3k4CQC44Oy1ySqBVr6m3BX5PCqiRkaG0YsLSzdDIs5SCe5oxIQKVnEkZS3WOGvRFQaJ+/DqP9nevv1EmNW8M1JnmCO7YvUfb+9KtWDdaRU6HHeRxC7D2PwYO91VBn7b+bUxFXwXau20KLGQJhk8czYBmOrPQSOcuvq8oyTdZkHVEnTjj0dWZ/YTerQmN3602j1M0knTeP7peaNeHWS9gOyYGoriPDtX4O8z/yjs3DGiBmUKJHhmLSBgjYRO61OGfdmmKgT3n9NOWltYwR0+qc6ai2qgrpP8I/c0=
+  email:
+    recipients:
+      secure: SCU7ZtaoZL4paHrlDJ/z6U040NAfuanPsEythkLgXspDI520VRPRW0Wmxmzbt4hrl60Qve5JgiJgotWEsKljLPrBCvcebi6ZKJo5DwwLkp1C6CUMhGgY3Z57IRuYhvuKvfyRXHKDC4f0OpXXyTz8/t4HcuDr7EulWQUVe0FI+7elVaT6V0PV73ZGgu7rpi67ptTO9Iw43ypIx4/kqpqpEN1zlnyhLynta2YH3NCWLGvfKTcK1uZHb6SGU2j8JW8VZ7WGPXHGYo473hVm1D7QOzB4pvzvBsKDXQLdMZZdkvNdlZAIedy4alDl8NMjc2HWUVmz1HZqr8usgLh5TrITUoTkryU4jQ7RMPp0yOwBGtTfNja69CdvntAFp+FV2ExBQnQIyp/eVF3nUHF/BWzGzRRawSa7/ZED0GWffVTIrEu+rlo3wLy8wZLPZPj9u9RIEImxp/SLWsrpexKLMsQ12ms8hk2wcHKZWZqypzc30v/RNdQSQ95pJV4DyEB4NpGLugrd44C6VhAFXh+IfEZFrr6gks3UFqmvDPhP2ywoL/CfMPIYtXjt4xRg6/whz8D45xvdPGV/Or5WzTfycL1tDVzPdcZvH6HVooZFbCpjB/2ZRUyKaTLLk00wYAP8Z4iGYsRJqXXo4qgbxXWo4VZryW/FqauNvBeT2ZuID+7J0Go=
