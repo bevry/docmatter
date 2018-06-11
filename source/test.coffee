@@ -89,3 +89,19 @@ joe.suite 'docmatter', (suite,test) ->
 			body: "\nalert('Hello World')\n",
 			content:  '/***\nminify: true\n***/\n\nalert(\'Hello World\')\n'
 		})
+
+	test 'javascript content with default front matter and vscode compatible comment', ->
+		result = docmatter('''
+			/* ***
+			minify: true
+			*** */
+
+			alert('Hello World')
+			''')
+		deepEqual(result, {
+			delimiter: '***',
+			parser: null,
+			header: 'minify: true',
+			body: "\nalert('Hello World')\n",
+			content:  '/* ***\nminify: true\n*** */\n\nalert(\'Hello World\')\n'
+		})
