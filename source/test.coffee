@@ -1,10 +1,10 @@
 # Import
-joe = require('joe')
+kava = require('kava')
 {deepEqual} = require('assert-helpers')
 docmatter = require('../')
 
 # Test
-joe.suite 'docmatter', (suite,test) ->
+kava.suite 'docmatter', (suite,test) ->
 	test 'only front matter with no newline', ->
 		result = docmatter('''
 			---
