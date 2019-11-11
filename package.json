@@ -115,7 +115,7 @@
     "@babel/core": "^7.2.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
     "@babel/preset-env": "^7.2.3",
-    "assert-helpers": "^4.9.3",
+    "assert-helpers": "^5.0.0",
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.3.2",
     "kava": "^3.1.0",
