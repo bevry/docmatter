@@ -1,7 +1,7 @@
 # Import
 kava = require('kava')
 {deepEqual} = require('assert-helpers')
-docmatter = require('../')
+docmatter = require('./')
 
 # Test
 kava.suite 'docmatter', (suite,test) ->
