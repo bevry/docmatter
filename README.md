@@ -46,10 +46,11 @@ Battle tested SSG front matter parser. Extracted from DocPad. Delimiter lines ha
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>docmatter</code> aliases <code>docmatter/index.js</code> which uses <a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a> to automatically select the correct edition for the consumers environment</li>
-<li><code>docmatter/source/index.coffee</code> is coffeescript source code with require for modules</li>
-<li><code>docmatter/edition-esnext/index.js</code> is coffeescript compiled for node.js with require for modules</li>
-<li><code>docmatter/edition-node-4/index.js</code> is coffeescript compiled for node.js 4 with require for modules</li></ul>
+<ul><li><code>docmatter/source/index.coffee</code> is coffeescript source code with require for modules</li>
+<li><code>docmatter</code> aliases <code>docmatter/edition-esnext/index.js</code></li>
+<li><code>docmatter/edition-esnext/index.js</code> is coffeescript compiled for node.js with require for modules</li></ul>
+
+<p>Environments older than Node.js v8 may need <a href="https://babeljs.io/docs/usage/polyfill/" title="A polyfill that emulates missing ECMAScript environment features">Babel's Polyfill</a> or something similar.</p>
 
 <!-- /INSTALL -->
 
@@ -186,7 +187,8 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/docmatter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/docmatter">view contributions</a></li></ul>
+<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/docmatter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/docmatter">view contributions</a></li>
+<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/docmatter/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/docmatter">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/docmatter/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
