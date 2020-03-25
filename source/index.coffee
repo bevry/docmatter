@@ -32,7 +32,7 @@ regex = ///
 
 # Export
 module.exports = (content) ->
- 	# Normalise line endings for the web, just for convience, if it causes problems we can remove
+	# Normalise line endings for the web, just for convience, if it causes problems we can remove
 	content = content.replace(/\r\n?/gm,'\n')
 
 	# ensure the content ends with a newline
