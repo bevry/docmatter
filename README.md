@@ -33,29 +33,6 @@ Battle tested SSG front matter parser. Extracted from DocPad. Delimiter lines ha
 <!-- /DESCRIPTION -->
 
 
-<!-- INSTALL/ -->
-
-<h2>Install</h2>
-
-<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
-<ul>
-<li>Install: <code>npm install --save docmatter</code></li>
-<li>Require: <code>require('docmatter')</code></li>
-</ul>
-
-<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
-
-<p>This package is published with the following editions:</p>
-
-<ul><li><code>docmatter/source/index.coffee</code> is coffeescript source code with require for modules</li>
-<li><code>docmatter</code> aliases <code>docmatter/edition-esnext/index.js</code></li>
-<li><code>docmatter/edition-esnext/index.js</code> is coffeescript compiled for node.js with require for modules</li></ul>
-
-<p>Environments older than Node.js v8 may need <a href="https://babeljs.io/docs/usage/polyfill/" title="A polyfill that emulates missing ECMAScript environment features">Babel's Polyfill</a> or something similar.</p>
-
-<!-- /INSTALL -->
-
-
 ## Usage
 
 docmatter is designed to be functional yet minimal, default parser as well as parsing of the headers are handled by you
@@ -142,6 +119,28 @@ alert('Hello World')
 `))
 // => { data: { minify: true }, content: 'alert(\'Hello World\')' }
 ```
+
+<!-- INSTALL/ -->
+
+<h2>Install</h2>
+
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
+<ul>
+<li>Install: <code>npm install --save docmatter</code></li>
+<li>Import: <code>import * as pkg from ('docmatter')</code></li>
+<li>Require: <code>const pkg = require('docmatter')</code></li>
+</ul>
+
+<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
+
+<p>This package is published with the following editions:</p>
+
+<ul><li><code>docmatter/source/index.coffee</code> is <a href="https://coffeescript.org" title="CoffeeScript is a little language that compiles into JavaScript">CoffeeScript</a> source code with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
+<li><code>docmatter</code> aliases <code>docmatter/edition-esnext/index.js</code></li>
+<li><code>docmatter/edition-esnext/index.js</code> is <a href="https://coffeescript.org" title="CoffeeScript is a little language that compiles into JavaScript">CoffeeScript</a> compiled for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
+
+<!-- /INSTALL -->
+
 
 <!-- HISTORY/ -->
 
