@@ -120,6 +120,9 @@ alert('Hello World')
 // => { data: { minify: true }, content: 'alert(\'Hello World\')' }
 ```
 
+
+
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
