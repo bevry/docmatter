@@ -123,6 +123,9 @@ alert('Hello World')
 
 
 
+
+
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
@@ -138,8 +141,8 @@ alert('Hello World')
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>docmatter/source/index.coffee</code> is <a href="https://coffeescript.org" title="CoffeeScript is a little language that compiles into JavaScript">CoffeeScript</a> source code with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
-<li><code>docmatter</code> aliases <code>docmatter/edition-esnext/index.js</code></li>
+<ul><li><code>docmatter</code> aliases <code>docmatter/index.js</code> which uses the <a href="https://github.com/bevry/editions" title="You can use the Editions Autoloader to autoload the appropriate edition for your consumers environment">Editions Autoloader</a> to automatically select the correct edition for the consumer's environment</li>
+<li><code>docmatter/source/index.coffee</code> is <a href="https://coffeescript.org" title="CoffeeScript is a little language that compiles into JavaScript">CoffeeScript</a> source code with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
 <li><code>docmatter/edition-esnext/index.js</code> is <a href="https://coffeescript.org" title="CoffeeScript is a little language that compiles into JavaScript">CoffeeScript</a> compiled for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
 
 <!-- /INSTALL -->
@@ -171,7 +174,7 @@ alert('Hello World')
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/docmatter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/docmatter">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/docmatter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/docmatter">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -191,8 +194,7 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/docmatter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/docmatter">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/docmatter/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/docmatter">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/docmatter/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/docmatter">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/docmatter/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
