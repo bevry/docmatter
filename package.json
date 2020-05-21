@@ -1,6 +1,6 @@
 {
   "name": "docmatter",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Battle tested SSG front matter parser. Extracted from DocPad. Delimiter lines have 3+ of the same character (such as `/***` and `***/`) allowing front matters to work with the syntax highlighting of your code editor. Supports custom parsers, e.g. `--- cson`. Parsers are handled externally.",
   "homepage": "https://github.com/bevry/docmatter",
   "license": "MIT",
@@ -58,12 +58,12 @@
     }
   },
   "funding": "https://bevry.me/fund",
-  "author": "2018+ Benjamin Lupton <b@lupton.cc>",
+  "author": "2018+ Benjamin Lupton <b@lupton.cc> (https://balupton.com)",
   "maintainers": [
-    "Benjamin Lupton (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "contributors": [
-    "Benjamin Lupton (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/docmatter/issues"
@@ -101,18 +101,15 @@
     }
   ],
   "type": "commonjs",
-  "main": "index.js",
-  "dependencies": {
-    "editions": "^2.3.0"
-  },
+  "main": "edition-esnext/index.js",
   "devDependencies": {
-    "@bevry/update-contributors": "^1.5.0",
-    "assert-helpers": "^6.4.0",
+    "@bevry/update-contributors": "^1.6.0",
+    "assert-helpers": "^6.5.0",
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.5.1",
-    "kava": "^5.0.0",
-    "projectz": "^2.1.0",
-    "valid-directory": "^1.6.0",
+    "kava": "^5.1.0",
+    "projectz": "^2.2.0",
+    "valid-directory": "^2.0.0",
     "yamljs": "^0.3.0"
   },
   "scripts": {
@@ -135,6 +132,6 @@
     "our:verify": "npm run our:verify:coffeelint && npm run our:verify:directory",
     "our:verify:coffeelint": "coffeelint ./source",
     "our:verify:directory": "valid-directory",
-    "test": "node ./test.js"
+    "test": "node ./edition-esnext/test.js"
   }
 }
