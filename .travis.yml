@@ -13,16 +13,16 @@ cache: npm
 install:
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-install.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-install.bash)"
 before_script:
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-verify.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-verify.bash)"
 after_success:
   - >-
     eval "$(curl -fsSL
-    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-publish.bash)"
+    https://raw.githubusercontent.com/bevry/awesome-travis/master/scripts/node-publish.bash)"
 notifications:
   email:
     recipients: >-
-      pkGFL97Q5geXwmbC16igs4WJ9I1JpNyRV+HBygkEdFk+Zf5vKatKHE+criwKS8oV+ehEvCjNAYxOa2R6YfAz855kAMhjtOuYOF5c2jzacm5eEmbOdISyBNtERKRrVvxhPEBP22ajjks6jx/uMcq76egoYzBRhhAzlgt29rnQU/9ujS3J0IYEZEani1LsH5KIz3+k/ezn0dJjBlTeKgZZWX/VQ/fBZqcFG3oWZEfQxuUU3hRV1YnM5uXEjFnBEi+rvnSi1Z2GKPiKCF5PqT3ecclpUtNpxHjZN9fNTw9KC31cvRGFXKoS24N3NHxtK61sv+y7/rgUCM6CdQwxlI4+DL0ikEdKk4Y2G59CjBozooC8evxnvOrraB4DDP6MTkGGWur2gAknxjT807vMCkttbp5eIJB5K5nEHi3DMKzdBXT/7GcpuQlTOoCPYjJA/9jzTfKB5VTRAi2w8nyrB4lpaGxboIegkQyIor+QCJbTu5vPyQyTCCBVED6yUJhTCWHIeMtbo6RHHrDsSSQDkEU+Tr9F6OgaVE7XV/MlO7BolBtmastoyQKY9YKSRF1QzTJOQwtl7HaLhOs3rZvPa7LTdJHMpPHDaR8idoS2YdJA5LzUBWHZ+LpGRQM2d4J3ZEmmvvun80Ona77YY4Ub1ns3IV68MlFLeb0fPsc+wjrd5is=
+      t9hEYQtCUULTu6do9AL+0reGkeFsOg60GgTSSeMYAEzBQtMLH315uoaLew0AtIaF28/r9sz4/cJnb8mDqUJaer+Scqn6tWrrOFf1Qc0iRc4nJ4YnGdFdjhApwtxpGxdTVsd35xLBnygn+U05uiX9IcKFydbCTFvpEue+TNubVrSag0lDeqIBEf7aTHdyg5vzGsFGY/ugGITeVW6mLR5EFjdLpE6JeaZ17GiVa5r9Ar51d/PMt6wjSCDcibicdIp5bbdAMIZ0rWZxdsjLRVYk9zdPKw5BKh4QJrHOIhzK4H40xyrGY+4sZK79kg3kse9ncoavxLtwGLQ5XzATiXkQUGZgxJfSyMzeN4kuuV1GAtR3vCzQ1Akj12uB3mG2++cYWzzBHhxZDZoen5fXPL2T0mmbIKKC1e3E/Ye0Zi450Ae51zCTpGGb+8fB3EpK3HzpBPTUAds/EHXwnRUVw02076iSf57zpWCPN+AIR0X+gn/Bkn80K2Toe8OLVSz2196f0sz+reEi+UgyuF0buapuZEp53Dhm8Jvnn9/FmGOCxsOtul7ZctaxXAuPxJSNpUpuq3KT76e6P6QhAezNxcGt7qKvONooGmYkRVSABwgaVmvtP7uBUjWWtSQf67AymhpsSLVUeAHBX1BWlcQN2yy7Nd+GTfb+TPA8ZNoi1FF7Rkw=
