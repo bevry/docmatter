@@ -104,7 +104,7 @@
   "main": "edition-esnext/index.js",
   "devDependencies": {
     "@bevry/update-contributors": "^1.15.0",
-    "assert-helpers": "^6.19.0",
+    "assert-helpers": "^7.0.1",
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.5.1",
     "kava": "^5.10.0",
