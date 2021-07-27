@@ -7,7 +7,7 @@
 
 <!-- BADGES/ -->
 
-<span class="badge-travisci"><a href="http://travis-ci.com/bevry/docmatter" title="Check this project's build status on TravisCI"><img src="https://img.shields.io/travis/com/bevry/docmatter/master.svg" alt="Travis CI Build Status" /></a></span>
+<span class="badge-githubworkflow"><a href="https://github.com/bevry/docmatter/actions?query=workflow%3Abevry" title="View the status of this project's GitHub Workflow: bevry"><img src="https://github.com/bevry/docmatter/workflows/bevry/badge.svg" alt="Status of the GitHub Workflow: bevry" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/docmatter" title="View this project on NPM"><img src="https://img.shields.io/npm/v/docmatter.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/docmatter" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/docmatter.svg" alt="NPM downloads" /></a></span>
 <span class="badge-daviddm"><a href="https://david-dm.org/bevry/docmatter" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/docmatter.svg" alt="Dependency Status" /></a></span>
@@ -119,6 +119,9 @@ alert('Hello World')
 `))
 // => { data: { minify: true }, content: 'alert(\'Hello World\')' }
 ```
+
+
+
 
 
 
