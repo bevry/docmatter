@@ -110,7 +110,7 @@
     "assert-helpers": "^8.4.0",
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.7.0",
-    "kava": "^5.15.0",
+    "kava": "^6.0.0",
     "projectz": "^2.23.0",
     "valid-directory": "^4.0.0",
     "yamljs": "^0.3.0"
