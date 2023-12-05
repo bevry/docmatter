@@ -1,6 +1,6 @@
 {
   "name": "docmatter",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Battle tested SSG front matter parser. Extracted from DocPad. Delimiter lines have 3+ of the same character (such as `/***` and `***/`) allowing front matters to work with the syntax highlighting of your code editor. Supports custom parsers, e.g. `--- cson`. Parsers are handled externally.",
   "homepage": "https://github.com/bevry/docmatter",
   "license": "Artistic-2.0",
@@ -111,12 +111,12 @@
   "main": "edition-esnext/index.js",
   "devDependencies": {
     "@bevry/update-contributors": "^1.23.0",
-    "assert-helpers": "^11.6.0",
+    "assert-helpers": "^11.9.0",
     "coffeelint": "^2.1.0",
     "coffeescript": "^2.7.0",
-    "kava": "^7.3.0",
-    "projectz": "^3.3.0",
-    "valid-directory": "^4.5.0",
+    "kava": "^7.5.0",
+    "projectz": "^3.4.0",
+    "valid-directory": "^4.6.0",
     "yamljs": "^0.3.0"
   },
   "scripts": {
